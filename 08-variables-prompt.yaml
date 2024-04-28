@@ -1,4 +1,4 @@
-- name: play 1
+- name: enter username and password
   hosts: localhosts
   vars_prompt:
     name: USERNAME
