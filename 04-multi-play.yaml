@@ -1,5 +1,5 @@
 - name: play 1
-  hosts: loaclhosts
+  hosts: localhosts
   tasks:
   - name: 
     ansible.builtin.debug:
