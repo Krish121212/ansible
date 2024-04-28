@@ -1,0 +1,13 @@
+- name: play 1
+  hosts: loaclhosts
+  tasks:
+  - name: 
+    ansible.builtin.debug:
+      msg: "Hi I'm KK from play 1"
+
+- name: play 2
+  hosts: loaclhosts
+  tasks:
+  - name: 
+    ansible.builtin.debug:
+      msg: "Hi I'm vaishnavi from play 2"
