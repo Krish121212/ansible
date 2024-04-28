@@ -7,4 +7,4 @@
   tasks:
   - name: 
     ansible.builtin.debug:
-      msg: "Hi I'm {{person1}} from play 1, i'm from {{city}}, where are you from{{person2}}"
+      msg: "Hi I'm {{person1}} from play 1, i'm from {{city}}, where are you from {{person2}}"
