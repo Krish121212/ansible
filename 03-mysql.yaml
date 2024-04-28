@@ -1,7 +1,9 @@
 - name: Installing mysql DB
   hosts: web
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
   become: yes
   tasks:
-    - debug: var=ansible_host
+    - name: Create a new database with name 'mysql'
+      community.mysql.mysql_db: 
+        name: MySQL-python
+          state: present
+          login_unix_socket: /run/mysqld/mysqld.sock
