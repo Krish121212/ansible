@@ -1,13 +1,13 @@
-- name: install and run mysql
+- name: install and run nginx
   hosts: web
   become: yes
   tasks:
-  - name: Install mysql
+  - name: Install nginx
     ansible.builtin.dnf:
-      name: mysql
+      name: nginx
       state: present
-  - name: start mysql
+  - name: start nginx
     ansible.builtin.service:
-      name: mysql
+      name: nginx
       state: started
       enabled: yes
