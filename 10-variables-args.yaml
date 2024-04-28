@@ -7,3 +7,5 @@
   - name: 
     ansible.builtin.debug:
       msg: "oh!! That's great, i will work on {{DB}} now"
+
+  ##if you are not giving variable values anywhere, you can use -e "Sir=KK", something like that while executing
