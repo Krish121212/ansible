@@ -1,0 +1,9 @@
+name: Installing mysql DB
+Hosts: web
+become: yes
+tasks:
+  -name: Create a new database with name 'mysql'
+    community.mysql.mysql_db: mysql
+    name: mysql
+    state: present
+    login_unix_socket: /run/mysqld/mysqld.sock
