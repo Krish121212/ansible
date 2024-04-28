@@ -6,7 +6,7 @@
       msg: "Hi I'm KK from play 1"
 
 - name: play 2
-  hosts: loaclhosts
+  hosts: localhosts
   tasks:
   - name: 
     ansible.builtin.debug:
