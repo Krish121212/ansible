@@ -1,0 +1,9 @@
+- name: variables from arguements 
+  hosts: localhosts
+  tasks:
+  - name: 
+    ansible.builtin.debug:
+      msg: "Hi {{Sir}}, coding in {{language}} has been completed"
+  - name: 
+    ansible.builtin.debug:
+      msg: "oh!! That's great, i will work on {{DB}} now"
