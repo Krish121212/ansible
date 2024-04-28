@@ -1,0 +1,10 @@
+- name: play 1
+  hosts: localhosts
+  vars:
+    person1: KK
+    person2: vaishnavi
+    city: Hyderabad
+  tasks:
+  - name: 
+    ansible.builtin.debug:
+      msg: "Hi I'm {{person1}} from play 1, i'm from {{city}}, where are you from{{person2}}"
