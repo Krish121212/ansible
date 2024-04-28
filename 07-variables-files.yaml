@@ -1,0 +1,11 @@
+- name: play 1
+  hosts: localhosts
+  vars_files:
+    vars.yaml
+  tasks:
+  - name: 
+    ansible.builtin.debug:
+      msg: "Hi I'm {{person1}} from play 1, i'm from {{city1}}, where are you from {{person2}}?"
+  - name: 
+    ansible.builtin.debug:
+      msg: "oh!! i'm from {{city2}}, been in {{city1}} for days {{person1}}"
