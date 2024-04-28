@@ -2,8 +2,8 @@
   hosts: web
   become: yes
   tasks:
-    - name: Create a new database with name 'mysql'
-      community.mysql.mysql_db: 
-        name: MySQL-python
-          state: present
-          login_unix_socket: /run/mysqld/mysqld.sock
+  - name: Create a new database with name 'mysql'
+    community.mysql.mysql_db: 
+      name: MySQL-python
+      state: present
+      login_unix_socket: /run/mysqld/mysqld.sock
