@@ -1,5 +1,5 @@
 - name: Installing mysql DB
-  Hosts: web
+  hosts: web
   become: yes
   tasks:
     - name: Create a new database with name 'mysql'
