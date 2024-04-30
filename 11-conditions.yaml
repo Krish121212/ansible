@@ -3,4 +3,4 @@
   become: yes
   tasks:
     - name: checking whether user is available or not
-      ansible.builtin.command:
+      ansible.builtin.command: id KK
