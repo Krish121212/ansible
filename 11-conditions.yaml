@@ -10,7 +10,7 @@
 
     - name: print user information
       ansible.builtin.debug:
-        msg: "user info: {{ KK }}"
+        msg: "user info: {{ USER }}"
 
     - name: User is there
       ansible.builtin.debug:
