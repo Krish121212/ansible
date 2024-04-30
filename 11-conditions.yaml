@@ -1,0 +1,7 @@
+- name: Conditions ansible
+  hosts: web
+  become: yes
+  tasks:
+    - name: checking whether user is available or not
+      ansible.builtin.command:
+        msg: "Hey"
