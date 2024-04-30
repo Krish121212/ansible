@@ -7,10 +7,10 @@
   tasks:
   - name: entered number is less than 10
     ansible.builtin.debug:
-    msg: "entered number {{number}} is less than ten"
+      msg: "entered number {{number}} is less than ten"
     when: number < 10
 
   - name: entered number is greater than 10
     ansible.builtin.debug:
-    msg: "entered number {{number}} is greater than ten"
+      msg: "entered number {{number}} is greater than ten"
     when: number > 10 
