@@ -4,3 +4,8 @@
   tasks:
     - name: checking whether user is available or not
       ansible.builtin.command: id KK
+      ignore_errors: true
+
+    - name: User is there
+      ansible.builtin.debug:
+        msg: "Hey KK"
