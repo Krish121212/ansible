@@ -4,13 +4,12 @@
   tasks:
     - name: checking whether user is available or not
       ansible.builtin.command: id KK
-      vars:
-        USER1: kk
+      register: USER
       ignore_errors: true
 
     - name: print user information
       ansible.builtin.debug:
-        msg: "user info: {{USER1}}"
+        msg: "user info: {{USER}}"
 
     - name: User is there
       ansible.builtin.debug:
