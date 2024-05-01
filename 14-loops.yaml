@@ -1,5 +1,5 @@
 - name: Lopps useage
-  hosts: localhosts
+  hosts: web
   tasks:
   - name: Print names
     ansible.builtin.debug:
