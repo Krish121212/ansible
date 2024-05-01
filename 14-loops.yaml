@@ -1,0 +1,10 @@
+- name: Lopps useage
+  hosts: localhosts
+  tasks:
+  - name: Print names
+    ansible.builtin.debug:
+      msg: "Hey {{item}}"
+    loop:
+      KK
+      Vaishnavi
+      Ramya
