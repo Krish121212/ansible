@@ -5,6 +5,6 @@
     ansible.builtin.debug:
       msg: "Hey {{item}}"
     loop:
-      KK
-      Vaishnavi
-      Ramya
+    - KK
+    - Vaishnavi
+    - Ramya
