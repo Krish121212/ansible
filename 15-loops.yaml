@@ -4,9 +4,8 @@
   tasks:
   - name: Installing packages
     ansible.builtin.dnf:
-      name: "{{item}}"
-      state: present
+      name: " {{item.name}} "
+      state: "{{item.state}}"
     loop:
-     - nginx
-     - git
-     - postfix
+     - { name: 'nginx', state: 'absent' }
+     - { name: 'postfix', state: 'absent' }
