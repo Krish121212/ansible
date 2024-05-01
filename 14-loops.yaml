@@ -1,4 +1,4 @@
-- name: Lopps useage
+- name: Loops useage
   hosts: web
   tasks:
   - name: Print names
