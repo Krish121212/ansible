@@ -19,6 +19,6 @@
   vars:
     greeting: Hi Good Evening
   tasks:
-  - name: lower case
-    ansible.builtin.debug:
-      msg: "{{ greeting | lower }}"
+    - name: lower case
+      ansible.builtin.debug:
+        msg: "{{ greeting | lower }}"
