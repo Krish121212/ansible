@@ -11,3 +11,24 @@
       name: nginx
       state: started
       enabled: yes
+
+
+
+- name: Install and Run Nginx
+  hosts: web
+  become: yes  # Run commands as sudo
+  tasks:
+  - name: Update APT package cache
+    ansible.builtin.apt:
+    update_cache: yes
+
+  - name: Install Nginx
+    ansible.builtin.apt:
+      name: nginx
+      state: present
+
+  - name: Start Nginx service
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
